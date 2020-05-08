@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/form.css">
+    </head>
+    <body class="layer">
+        <div>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        </div>
+        <div id="title_container">
+
+            <h1 id="title">Favourite Food Survey Form</h1>
+
+            <p id="description">We are collecting valuable data about what food people like, <br>help us out by filling this form!</p>
+
+        </div>
+        <div id="form_container">
+            <form id="survey-form">
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" name="fullname" id="name" placeholder="Enter your name" class="form_padding" required><br>
+
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email"  name="address" id="email" placeholder="Enter your email address" class="form_padding" required><br>
+
+                <label for="age" id="number-label">Your age (optional)</label>
+                <input type="number" name="age" id="number" placeholder="Enter your age" min="0" max="120" class="form_padding"><br>
+
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male" style="font-size:15px;">Male</label><br>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female" style="font-size:15px;">Female</label><br>
+                <input type="radio" name="gender" value="not-defined" id="not-defined" checked>
+                <label for="not-defined" style="font-size:15px;">Don't wish to tell</label><br><br>
+
+                <label for="time-of-day">Select your most favourite</label><br>
+                <select id="dropdown" class="form_padding">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select><br>
+
+                <label>Select your must-have pizza topping(s)</label><br>
+                <input type="checkbox" name="pizza-topping" value="pepperoni" id="pepperoni">
+                <label for="pepperoni" style="font-size:15px;">Pepperoni</label><br>
+                <input type="checkbox" name="pizza-topping" value="mushrooms" id="mushrooms">
+                <label for="mushrooms" style="font-size:15px;">Mushrooms</label><br>
+                <input type="checkbox" name="pizza-topping" value="onions" id="onions">
+                <label for="onions" style="font-size:15px;">Onions</label><br>
+                <input type="checkbox" name="pizza-topping" value="bacon" id="bacon">
+                <label for="bacon" style="font-size:15px;">Bacon</label><br>
+                <input type="checkbox" name="pizza-topping" value="black-olives" id="black-olives">
+                <label for="black-olives" style="font-size:15px;">Black olives</label><br>
+                <input type="checkbox" name="pizza-topping" value="pineapple" id="pineapple">
+                <label for="pineapple" style="font-size:15px;">Pineapple</label><br>
+                <input type="checkbox" name="pizza-topping" value="green-pepper" id="green-pepper">
+                <label for="green-pepper" style="font-size:15px;">Green peppers</label><br><br>
+
+                <label for="comments">Finally, please enter your favourite dish(es) or food item(s)</label>
+                <textarea id="comments" rows="4" cols="50" class="textarea_padding" placeholder="Pasta, quiche, cottage cheese, etc."></textarea>
+
+                <input type="submit" id="submit" value="Submit!">
+            </form>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>
